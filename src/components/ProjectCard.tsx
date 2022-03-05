@@ -31,7 +31,7 @@ export function ProjectCard({ project, ...props }: { project: Project; props?: a
             <p className="text-zinc-400 mb-4">{project.description}</p>
 
             <motion.button
-                className="mt-auto px-4 py-2 rounded-md text-sm font-semibold text-zinc-100"
+                className="mt-auto rounded-md text-sm font-semibold text-zinc-100"
                 style={{ background: "rgba(39, 39, 42, 0.5)" }}
                 whileHover={{
                     background: "rgba(39, 39, 42, 1)",
@@ -42,7 +42,7 @@ export function ProjectCard({ project, ...props }: { project: Project; props?: a
                 <a
                     href={project.github ?? project.link}
                     rel="noreferrer"
-                    className="flex flex-row items-center justify-center"
+                    className="flex flex-row items-center justify-center px-4 py-2 "
                     target="_blank"
                 >
                     View {project.github ? "on GitHub" : "Page"}
