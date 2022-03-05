@@ -9,7 +9,8 @@ export function ProjectCard({ project, ...props }: { project: Project; props?: a
         <motion.div
             className="px-6 py-6 text-white bg-black flex flex-col items-start justify-start m-4 border-[1px] rounded-md border-zinc-800"
             style={{ boxShadow: "0 15px 30px -30px rgba(74, 158, 255, 0.4)" }}
-            whileHover={{ boxShadow: "0 10px 30px -20px rgba(74, 158, 255, 0.75)" }}
+            whileHover={{ boxShadow: "0 10px 25px -20px rgba(74, 158, 255, 0.75)" }}
+            {...props}
         >
             <p className="text-zinc-50 text-[1.5rem] mb-1 flex items-center">
                 <span className="font-black text-white">{project.letter}</span>.cnrad.dev

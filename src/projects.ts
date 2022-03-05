@@ -29,6 +29,7 @@ const projectListOriginal: Project[] = [
     {
         letter: "d",
         description: "A little dashboard that tracks the stats of specified Discord, Github, and Twitter profiles",
+        github: "https://github.com/cnrad/d",
     },
     {
         letter: "p",
@@ -38,7 +39,12 @@ const projectListOriginal: Project[] = [
     {
         letter: "i",
         description: "An index for all of my one-letter projects",
-        link: "https://i.cnrad.dev",
+        github: "https://github.com/cnrad/i",
+    },
+    {
+        letter: "l",
+        description: "A private link shortener that tracks clicks and visits",
+        github: "https://github.com/cnrad/l",
     },
 ];
 
