@@ -14,7 +14,12 @@ export function ProjectCard({ project, ...props }: { project: Project; props?: a
         >
             <p className="text-zinc-50 text-[1.5rem] mb-1 flex items-center">
                 <span className="font-black text-white">{project.letter}</span>.cnrad.dev
-                <a href={`https://${project.letter}.cnrad.dev`} target="_blank" className="flex items-center">
+                <a
+                    href={`https://${project.letter}.cnrad.dev`}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex items-center"
+                >
                     <ExternalLinkIcon
                         width={20}
                         height={20}
@@ -36,6 +41,7 @@ export function ProjectCard({ project, ...props }: { project: Project; props?: a
             >
                 <a
                     href={project.github ?? project.link}
+                    rel="noreferrer"
                     className="flex flex-row items-center justify-center"
                     target="_blank"
                 >
