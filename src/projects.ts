@@ -39,7 +39,7 @@ const projectListOriginal: Project[] = [
     {
         letter: "i",
         description: "An index for all of my one-letter projects",
-        github: "https://github.com/cnrad/i",
+        github: "https://github.com/cnrad/index",
     },
     {
         letter: "l",
