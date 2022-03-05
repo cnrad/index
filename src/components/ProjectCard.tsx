@@ -7,12 +7,19 @@ export function ProjectCard({ project, ...props }: { project: Project; props?: a
 
     return (
         <motion.div
-            className="px-6 py-6 w-96 text-white bg-black flex flex-col items-start justify-start m-4 border-[1px] rounded-md border-zinc-800"
-            style={{ boxShadow: "0 15px 30px -30px rgba(74, 158, 255, 0.6)" }}
+            className="px-6 py-6 text-white bg-black flex flex-col items-start justify-start m-4 border-[1px] rounded-md border-zinc-800"
+            style={{ boxShadow: "0 15px 30px -30px rgba(74, 158, 255, 0.4)" }}
             whileHover={{ boxShadow: "0 10px 30px -20px rgba(74, 158, 255, 0.75)" }}
         >
-            <p className="text-zinc-50 text-[1.5rem] mb-1">
+            <p className="text-zinc-50 text-[1.5rem] mb-1 flex items-center">
                 <span className="font-black text-white">{project.letter}</span>.cnrad.dev
+                <a href={`https://${project.letter}.cnrad.dev`} target="_blank" className="flex items-center">
+                    <ExternalLinkIcon
+                        width={20}
+                        height={20}
+                        className="ml-2 text-gray-500 hover:text-white transition duration-150"
+                    />
+                </a>
             </p>
 
             <p className="text-zinc-400 mb-4">{project.description}</p>

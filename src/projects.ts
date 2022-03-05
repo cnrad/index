@@ -5,7 +5,7 @@ export interface Project {
     link?: string;
 }
 
-export const projectList: Project[] = [
+const projectListOriginal: Project[] = [
     {
         letter: "s",
         description: "Display the song I'm currently listening to on Spotify",
@@ -35,4 +35,12 @@ export const projectList: Project[] = [
         description: "Not a project, just my Polywork",
         link: "https://p.cnrad.dev",
     },
+    {
+        letter: "i",
+        description: "An index for all of my one-letter projects",
+        link: "https://i.cnrad.dev",
+    },
 ];
+
+// Sort alphabetically
+export const projectList: Project[] = projectListOriginal.sort((a, b) => (a.letter > b.letter ? 1 : -1));

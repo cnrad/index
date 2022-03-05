@@ -12,6 +12,7 @@ body {
     width: 100vw;
     height: 100vh;
     background: #060608;
+    overflow-x: hidden;
 }
 
 a {
