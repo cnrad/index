@@ -7,6 +7,11 @@ export interface Project {
 
 const projectListOriginal: Project[] = [
     {
+        letter: "b",
+        description: "Explore the beauty of Bézier curves - my final project for AP Calculus AB that earned an A+",
+        github: "https://github.com/cnrad/bezier",
+    },
+    {
         letter: "s",
         description: "Display the song I'm currently listening to on Spotify",
         github: "https://github.com/cnrad/s",
